@@ -16,6 +16,13 @@ public class Utils {
         }
     }
 
+    public static void printf(int [] a){
+            for (Integer i :a) {
+                System.out.printf("%5d",i);
+            }
+            System.out.println();
+    }
+
     public static void swap(int[] a,int i,int j){
         int tmp = a[i];
         a[i] = a[j];
