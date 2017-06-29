@@ -234,6 +234,7 @@ public class ExcelUtil {
                 SXSSFRow titleRow = sheet.createRow(0);//表头 rowIndex=0
                 titleRow.createCell(0).setCellValue(title);
 //                titleRow.getCell(0).setCellStyle(titleStyle);
+                titleRow.createCell(1).setCellValue("xxx");
                 sheet.addMergedRegion(new CellRangeAddress(0, 0, 0, headMap.size() - 1));
 
                 SXSSFRow headerRow = sheet.createRow(1); //列头 rowIndex =1
