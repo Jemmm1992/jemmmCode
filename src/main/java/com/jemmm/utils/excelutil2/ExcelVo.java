@@ -1,4 +1,4 @@
-package com.jemmm.utils.excelutil2.annotation;
+package com.jemmm.utils.excelutil2;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

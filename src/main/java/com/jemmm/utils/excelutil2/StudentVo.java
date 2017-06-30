@@ -1,6 +1,5 @@
-package com.jemmm.utils.excelutil2.entiy;
+package com.jemmm.utils.excelutil2;
 
-import com.jemmm.utils.excelutil2.annotation.ExcelVo;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;

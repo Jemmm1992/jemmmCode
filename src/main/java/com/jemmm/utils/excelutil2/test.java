@@ -1,11 +1,10 @@
 package com.jemmm.utils.excelutil2;
 
 
-import com.jemmm.utils.excelutil2.annotation.ExcelVo;
-import com.jemmm.utils.excelutil2.entiy.StudentVo;
 import org.apache.poi.hssf.usermodel.HSSFCell;
 import org.apache.poi.hssf.usermodel.HSSFCellStyle;
 import org.apache.poi.hssf.usermodel.HSSFFont;
+import org.apache.poi.ss.formula.functions.T;
 import org.apache.poi.ss.usermodel.CellStyle;
 import org.apache.poi.ss.usermodel.Font;
 import org.apache.poi.ss.usermodel.IndexedColors;
@@ -13,9 +12,14 @@ import org.apache.poi.xssf.streaming.SXSSFCell;
 import org.apache.poi.xssf.streaming.SXSSFRow;
 import org.apache.poi.xssf.streaming.SXSSFSheet;
 import org.apache.poi.xssf.streaming.SXSSFWorkbook;
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.InputStream;
 import java.lang.reflect.Field;
 import java.math.BigDecimal;
 import java.text.SimpleDateFormat;
@@ -41,17 +45,76 @@ public class test {
         Map<Integer, List<Object>> excelBody = getExcelBody(list, StudentVo.class);
         System.out.println(excelBody);
         FileOutputStream out = null;
-
         try {
             out = new FileOutputStream("E:\\excelTest.xlsx");
             exportExcel(excelHeader, excelBody, out);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-
     }
 
-    public static void exportExcel(Map<Integer, String> excelHeader, Map<Integer, List<Object>> excelBody, FileOutputStream out) {
+    public List<T> importFromExcel(String sheetName, InputStream input,Class<?> clazz) {
+        List<T> list = new ArrayList<>();
+        try {
+            XSSFWorkbook wb = new XSSFWorkbook(input);
+            XSSFSheet sheet = null;
+            if(!sheetName.trim().equals("")){
+                sheet = wb.getSheet(sheetName);
+            }
+            if(sheet == null){
+                sheet = wb.getSheetAt(0);// 如果sheetName为空，或者sheetName不存在，则默认的指向第一页
+            }
+            int numberOfRows= sheet.getPhysicalNumberOfRows();
+            Map<Integer, String> excelHeader = getExcelHeader(clazz);
+            int colNum = excelHeader.size();
+            if(numberOfRows > 0){
+                // 从第二行开始读取数据
+                for(int i = 1 ; i < numberOfRows ; i++){
+                    XSSFRow row = sheet.getRow(i);
+                    T entity = null;
+                    for(int j = 0 ;j<colNum;j++){
+                        XSSFCell cell = row.getCell(j);
+                        if(cell == null)continue;
+                        int cellType = cell.getCellType();
+                        String c = "";
+                        if (cellType == XSSFCell.CELL_TYPE_NUMERIC) {
+                            c = String.valueOf(cell.getNumericCellValue());
+                        } else if (cellType == XSSFCell.CELL_TYPE_BOOLEAN) {
+                            c = String.valueOf(cell.getBooleanCellValue());
+                        } else {
+                            c = cell.getStringCellValue();
+                        }
+                        if (c == null || c.equals("")) {
+                            continue;
+                        }
+                        entity = (entity == null ? T.class.newInstance() : entity);// 如果不存在实例则新建.
+
+                    }
+                }
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    public static Map<Integer,Field> getFieldMap(Class clazz){
+        Map<Integer,Field> map = new LinkedHashMap<>();
+        Field[] fields = clazz.getDeclaredFields();
+        for (Field field:fields) {
+            if(field.isAnnotationPresent(ExcelVo.class)){
+                ExcelVo annotation = field.getAnnotation(ExcelVo.class);
+                if(annotation.isExport()){
+                    map.put(annotation.col(),field);
+                }
+            }
+        }
+        return map;
+    }
+
+
+        public static void exportExcel(Map<Integer, String> excelHeader, Map<Integer, List<Object>> excelBody, FileOutputStream out) {
         // rowAccessWindowSize代表指定的内存中缓存记录数
         // 举个例子：内存中限制行数为100，当行号到达101时，行号为0的记录刷新到硬盘并从内存中删除，以此类推
         // 默认为100
@@ -64,7 +127,6 @@ public class test {
         SXSSFSheet sheet = wb.createSheet();// 创建一个表
         sheet.trackAllColumnsForAutoSizing();
         sheet.createFreezePane(0, 1, 0, 1);// 冻结第一行
-
         // 生成表的头部标题
         SXSSFRow headerRow = sheet.createRow(0); //列头 rowIndex =0
         headerRow.setHeightInPoints(30);//设置单元格高度
@@ -75,12 +137,10 @@ public class test {
             headerRow.createCell(key).setCellValue(value);
             headerRow.getCell(key).setCellStyle(headerStyle);
         }
-
         for (int i = 1; i <= excelBody.get(0).size(); i++) {
             SXSSFRow row = sheet.createRow(i);
             row.setHeightInPoints(20);
         }
-
         for (Iterator<Map.Entry<Integer, List<Object>>> iterator = excelBody.entrySet().iterator(); iterator.hasNext(); ) {
             Map.Entry<Integer, List<Object>> next = iterator.next();
             Integer key = next.getKey();
@@ -91,7 +151,6 @@ public class test {
                 cell.setCellType(HSSFCell.CELL_TYPE_STRING);
                 Object o = value.get(i - 1);
                 String cellValue = "";
-
                 if (o == null) {
                     cellValue = "";
                 } else if (o instanceof Date) {
@@ -101,16 +160,12 @@ public class test {
                 } else {
                     cellValue = o.toString();
                 }
-
                 cell.setCellValue(cellValue);
                 cell.setCellStyle(cellStyle);
             }
         }
-
         // 自动调整宽度
-        for (int i = 0; i < excelHeader.size(); i++) {
-            sheet.autoSizeColumn(i);
-        }
+        for (int i = 0; i < excelHeader.size(); i++) {sheet.autoSizeColumn(i);}
         try {
             wb.write(out);
             wb.close();
@@ -132,13 +187,6 @@ public class test {
     public static Map<Integer, List<Object>> getExcelBody(List list, Class<?> clazz) throws IllegalAccessException {
         Map<Integer, List<Object>> map = new LinkedHashMap<>();
         Field[] fields = clazz.getDeclaredFields();
-
-        List[] listArray = new List[list.size()];
-
-        for (int i = 0; i < list.size(); i++) {
-
-        }
-
         for (Field field : fields) {
             field.setAccessible(true);
             ExcelVo annotation = field.getAnnotation(ExcelVo.class);
