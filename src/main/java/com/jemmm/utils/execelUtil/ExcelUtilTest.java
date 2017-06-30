@@ -19,7 +19,7 @@ public class ExcelUtilTest {
     @Test
     public void exportExcel(){
         // 初始化数据
-        List<StudentVO> list = new ArrayList<StudentVO>();
+        List<StudentVO> list = new ArrayList<>();
 
         StudentVO vo = new StudentVO();
         vo.setId(1);

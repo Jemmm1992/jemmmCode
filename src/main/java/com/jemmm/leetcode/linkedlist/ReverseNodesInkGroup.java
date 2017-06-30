@@ -2,8 +2,8 @@ package com.jemmm.leetcode.linkedlist;
 
 import com.jemmm.leetcode.common.ListNode;
 
-import static com.jemmm.utils.Utils.arrayToListNode;
-import static com.jemmm.utils.Utils.printfListNode;
+import static com.jemmm.utils.PrintfUtils.arrayToListNode;
+import static com.jemmm.utils.PrintfUtils.printfListNode;
 
 /**
  * Created by xu_zj on 2017/6/29.
