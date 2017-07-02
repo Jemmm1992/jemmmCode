@@ -1,8 +1,8 @@
 package com.jemmm.leetcode.partition;
 import java.util.ArrayList;
 
-import static com.jemmm.utils.Utils.printf;
-import static com.jemmm.utils.Utils.swap;
+import static com.jemmm.utils.CommonUtils.swap;
+import static com.jemmm.utils.PrintfUtils.printf;
 /**
  * Created by BIG-JIAN on 2017/6/18.
  */

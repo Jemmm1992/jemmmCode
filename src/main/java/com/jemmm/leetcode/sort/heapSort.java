@@ -2,8 +2,8 @@ package com.jemmm.leetcode.sort;
 
 import java.util.Arrays;
 
-import static com.jemmm.utils.Utils.printf;
-import static com.jemmm.utils.Utils.swap;
+import static com.jemmm.utils.CommonUtils.swap;
+import static com.jemmm.utils.PrintfUtils.printf;
 
 /**
  * Created by xu_zj on 2017/6/27.

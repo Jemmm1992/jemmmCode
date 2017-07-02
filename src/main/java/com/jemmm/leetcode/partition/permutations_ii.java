@@ -7,8 +7,8 @@ package com.jemmm.leetcode.partition;
 import java.util.ArrayList;
 import java.util.HashSet;
 
-import static com.jemmm.utils.Utils.printf;
-import static com.jemmm.utils.Utils.swap;
+import static com.jemmm.utils.CommonUtils.swap;
+import static com.jemmm.utils.PrintfUtils.printf;
 
 /**
  * Given a collection of numbers that might contain duplicates, return all possible unique permutations.

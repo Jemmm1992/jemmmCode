@@ -2,8 +2,8 @@ package com.jemmm.leetcode.linkedlist;
 
 import com.jemmm.leetcode.common.ListNode;
 
-import static com.jemmm.utils.Utils.arrayToListNode;
-import static com.jemmm.utils.Utils.printfListNode;
+import static com.jemmm.utils.CommonUtils.arrayToListNode;
+import static com.jemmm.utils.PrintfUtils.printfListNode;
 
 /**
  * Created by xu_zj on 2017/6/29.
@@ -19,13 +19,14 @@ import static com.jemmm.utils.Utils.printfListNode;
 
 public class ReverseNodesInkGroup {
     public static void main(String[] args) {
-        int []  a= {1,2,3,4,5,6,7,8,9,10};
+        int[] a = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10,11};
         ListNode head = arrayToListNode(a);
         printfListNode(head);
 
         ListNode node = reverseKGroup(head, 3);
         printfListNode(node);
     }
+
     public static ListNode reverseKGroup(ListNode head, int k) {
         ListNode cur = head;
         int cnt = 0;
@@ -35,10 +36,13 @@ public class ReverseNodesInkGroup {
             cnt++;
         }
         if (cnt == k) {
-            printfListNode(cur);
+            System.out.println("===" + cur.val);
             cur = reverseKGroup(cur, k);
+//            System.out.println("cur = reverseKGroup(cur, k) ->" + "cur: " + cur.val );
+//            printfListNode(cur);
+            System.out.println("***" + cur.val);
             // reverse
-            while (0 <= --cnt) {
+            while (--cnt >= 0) {
                 ListNode tmp = head.next;
                 head.next = cur;
                 cur = head;
