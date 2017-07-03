@@ -200,7 +200,7 @@ public class ExcelRM<T> {
         for (Field field : fields) {
             field.setAccessible(true);
             ExcelVo annotation = field.getAnnotation(ExcelVo.class);
-            if (annotation.isExport()) {
+            if (annotation != null && annotation.isExport()) {
                 List<Object> l = new ArrayList<>();
                 Object o = null;
                 for (int i = 0; i < list.size(); i++) {
