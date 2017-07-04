@@ -21,6 +21,7 @@ public class AnnotationProcessor {
         // 对field上的注解解析
         Field[] fields = clazz.getDeclaredFields();
         for(Field field :fields){
+            System.out.println("fileTypeName:" + field.getType().getName());
             System.out.println("fieldName=" + field.toString());
             if(field.isAnnotationPresent(PersonSex.class)){
                 PersonSex annotation = (PersonSex)field.getAnnotation(PersonSex.class);
