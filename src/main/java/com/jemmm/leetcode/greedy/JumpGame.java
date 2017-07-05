@@ -19,8 +19,6 @@ public class JumpGame {
         int i = 0;
         for ( ; i < A.length && i <= reach; i++) {
             reach = Math.max(reach, i + A[i]);
-            System.out.println(reach);
-            System.out.println(i+A[i]);
         }
         return (i == A.length);
     }
