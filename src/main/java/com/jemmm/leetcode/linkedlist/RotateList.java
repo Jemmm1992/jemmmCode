@@ -16,7 +16,7 @@ import com.jemmm.leetcode.common.ListNode;
  * 1. k是可以大于整个list的长度的，所以这时要对k对len取模
  * 2. 如果取模之后得0，相当于不用rotate，直接返回
  */
-public class rotateList {
+public class RotateList {
     public ListNode rotateRight(ListNode head, int n) {
         if (head == null || head.next == null || n == 0)
             return head;

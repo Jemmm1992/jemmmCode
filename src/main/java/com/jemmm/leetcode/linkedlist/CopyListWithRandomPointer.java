@@ -13,7 +13,7 @@ package com.jemmm.leetcode.linkedlist;
  * 2.复制每个节点的Random节点。
  * 3.拆分链表。
  */
-public class copyListWithRandomPointer {
+public class CopyListWithRandomPointer {
     public RandomListNode copyRandomList(RandomListNode head) {
         if (head == null) return null;
         copyNode(head);

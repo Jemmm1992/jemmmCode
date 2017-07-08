@@ -9,7 +9,7 @@ import com.jemmm.leetcode.common.ListNode;
  * Given1->1->2, return1->2.
  * Given1->1->2->3->3, return1->2->3.
  */
-public class removeDuplicatesFromSortedList {
+public class RemoveDuplicatesFromSortedList {
     public ListNode deleteDuplicates(ListNode head) {
         if(head == null) return head;
         ListNode pre = head;

@@ -11,14 +11,14 @@ import static com.jemmm.utils.CommonUtils.swap;
 import static com.jemmm.utils.PrintfUtils.printf;
 
 /**
- * Given a collection of numbers that might contain duplicates, return all possible unique permutations.
+ * Given a collection of numbers that might contain duplicates, return all possible unique Permutations.
  * For example,
- * [1,1,2]have the following unique permutations:
+ * [1,1,2]have the following unique Permutations:
  * [1,1,2],[1,2,1], and[2,1,1].
  *
  * 不是最优解
  */
-public class permutations_ii {
+public class Permutations_ii {
     public static void main(String[] args) {
         int[] a = {1, 2, 2};
         ArrayList<ArrayList<Integer>> arrayLists = permuteUnique(a);

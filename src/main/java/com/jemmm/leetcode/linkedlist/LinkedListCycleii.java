@@ -14,7 +14,7 @@ import com.jemmm.leetcode.common.ListNode;
  * 1. 判断是否是有环链表->快慢指针
  * 2. 如果是有环链表，如何找到环的入口
  */
-public class linkedListCycleii {
+public class LinkedListCycleii {
     public ListNode detectCycle(ListNode head) {
         if(head== null) return null;
         ListNode fast = head;

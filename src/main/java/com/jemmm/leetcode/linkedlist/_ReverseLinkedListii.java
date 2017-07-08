@@ -20,7 +20,7 @@ import com.jemmm.leetcode.common.ListNode;
  * 第二步就是进行反转直到n结点。
  * 反转的方法就是每读到一个结点，把它插入到m结点前面位置，然后m结点接到读到结点的下一个。
  */
-public class _reverseLinkedListii {
+public class _ReverseLinkedListii {
     public ListNode reverseBetween(ListNode head, int m, int n) {
         if(head == null) return null;
         ListNode node = new ListNode(0);

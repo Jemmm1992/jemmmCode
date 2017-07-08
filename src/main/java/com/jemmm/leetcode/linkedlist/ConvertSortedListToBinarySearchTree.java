@@ -13,7 +13,7 @@ import com.jemmm.leetcode.common.TreeNode;
  * 思路：1.找中间结点，构建根结点，2.中间结点左半部分构建左子树，3.中间结点的右部分构建右子树
  */
 
-public class convertSortedListToBinarySearchTree {
+public class ConvertSortedListToBinarySearchTree {
 
     public TreeNode sortedListToBST(ListNode head) {
         if (head == null) {

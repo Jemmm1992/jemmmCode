@@ -17,7 +17,7 @@ import com.jemmm.leetcode.common.ListNode;
  * 2. 将第二个链翻转。
  * 3. 将第二个链表的元素间隔地插入第一个链表中。
  */
-public class reorderList {
+public class ReorderList {
     public void reorderList(ListNode head) {
         if (head == null || head.next == null) return;
         ListNode fast = head;

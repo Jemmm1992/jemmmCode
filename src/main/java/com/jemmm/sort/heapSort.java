@@ -1,4 +1,4 @@
-package com.jemmm.leetcode.sort;
+package com.jemmm.sort;
 
 import java.util.Arrays;
 
@@ -18,6 +18,10 @@ public class heapSort {
         printf(a);
         Arrays.sort(a);
         printf(a);
+
+        heapSort(a);
+        printf(a);
+
     }
 
     // 堆排序的思路
@@ -45,6 +49,39 @@ public class heapSort {
                 }
                 j = child;
             }
+        }
+    }
+
+    /**
+     * 原先方法
+     */
+
+    public static void heapSort(int[] a) {
+        int len = a.length - 1;
+        int k = (len - 1) / 2;
+        for (int i = k; i >= 0; i--) {
+            adjustMaxHeap(a, i, len);
+        }
+        for (int i = 0; i <= len; i++) {
+            swap(a, 0, len - i);
+            adjustMaxHeap(a, 0, len - 1 - i);
+        }
+    }
+
+    /*
+     * 堆排序的步骤 1.先建堆 2.每次取出最小值，进行堆调整
+     */
+    private static void adjustMaxHeap(int[] a, int i, int len) {
+        int child = 2 * i + 1;
+        while (child <= len) {
+            if (child + 1 <= len && a[child] < a[child + 1]) {
+                child += 1;
+            }
+            if (a[i] < a[child]) {
+                swap(a, i, child);
+            }
+            i = child;
+            child = 2 * child + 1;
         }
     }
 }

@@ -7,12 +7,12 @@ import static com.jemmm.utils.PrintfUtils.printf;
  * Created by BIG-JIAN on 2017/6/18.
  */
 /**
- * Given a collection of numbers, return all possible permutations.
+ * Given a collection of numbers, return all possible Permutations.
  * For example,
- * [1,2,3]have the following permutations:
+ * [1,2,3]have the following Permutations:
  * [1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2], and[3,2,1].
  */
-public class permutations {
+public class Permutations {
     public static void main(String[] args) {
         int[] a = {1, 2, 3};
         ArrayList<ArrayList<Integer>> permute = permute(a);

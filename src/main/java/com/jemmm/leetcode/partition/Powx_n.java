@@ -7,7 +7,7 @@ package com.jemmm.leetcode.partition;
 /**
  * Implement pow(x, n).
  */
-public class powx_n {
+public class Powx_n {
     public static void main(String[] args) {
         System.out.println(pow(2.00,10));
         System.out.println(pow(2.00,-2));

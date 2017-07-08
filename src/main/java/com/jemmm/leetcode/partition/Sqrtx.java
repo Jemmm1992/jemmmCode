@@ -8,7 +8,7 @@ package com.jemmm.leetcode.partition;
  * Implementint sqrt(int x).
  * Compute and return the square root of x.
  */
-public class sqrtx {
+public class Sqrtx {
     public static void main(String[] args) {
         int i = 2;
         System.out.println(sqrt(i));

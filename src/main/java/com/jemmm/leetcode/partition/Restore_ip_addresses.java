@@ -13,7 +13,7 @@ import java.util.ArrayList;
  * return["255.255.11.135", "255.255.111.35"]. (Order does not matter)
  * 思路：
  */
-public class restore_ip_addresses {
+public class Restore_ip_addresses {
     public static void main(String[] strs) {
         System.out.println(restoreIpAddresses("0000"));
         System.out.println(restoreIpAddresses("1110000"));

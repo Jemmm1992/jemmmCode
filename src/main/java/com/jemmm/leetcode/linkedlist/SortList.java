@@ -10,7 +10,7 @@ import com.jemmm.leetcode.common.ListNode;
 /**
  * 思路：符合要求的只有 归并排序
  */
-public class sortList {
+public class SortList {
     public ListNode sortList(ListNode head) {
         if(head == null || head.next == null) return head;
         ListNode fast =head;

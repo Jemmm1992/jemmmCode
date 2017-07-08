@@ -43,6 +43,15 @@ public class PrintfUtils {
             System.out.println();
     }
 
+    public static void printf(int[][] a) {
+        for (int i = 0; i < a.length; i++) {
+            for (int j = 0; j < a[0].length; j++) {
+                System.out.printf("%5d", a[i][j]);
+            }
+            System.out.println();
+        }
+    }
+
     /**
      * 打印链表
      * @param head

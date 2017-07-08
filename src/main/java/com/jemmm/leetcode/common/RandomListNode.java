@@ -1,7 +1,5 @@
 package com.jemmm.leetcode.common;
 
-import com.jemmm.leetcode.linkedlist.copyListWithRandomPointer;
-
 /**
  * Created by xu_zj on 2017/6/23.
  */
