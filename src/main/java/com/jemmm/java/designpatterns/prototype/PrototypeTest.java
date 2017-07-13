@@ -11,7 +11,7 @@ public class PrototypeTest {
     @Test
     public void test() throws IOException, ClassNotFoundException {
         Author author=new Author();
-        author.setName("tengj");
+        author.setName("xzj");
         Book book=new Book();
         book.setBookName("Java设计模式");
         book.setPrice(99);
