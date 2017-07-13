@@ -1,4 +1,4 @@
-package com.jemmm.java.proxy.cglib;
+package com.jemmm.java.designpatterns.proxy.cglib;
 
 import net.sf.cglib.proxy.Enhancer;
 import net.sf.cglib.proxy.MethodInterceptor;

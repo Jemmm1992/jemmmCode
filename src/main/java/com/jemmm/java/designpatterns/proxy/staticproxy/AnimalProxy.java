@@ -1,4 +1,4 @@
-package com.jemmm.java.proxy.staticproxy;
+package com.jemmm.java.designpatterns.proxy.staticproxy;
 
 /**
  * Created by BIG-JIAN on 2017/7/9.

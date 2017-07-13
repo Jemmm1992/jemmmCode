@@ -1,4 +1,4 @@
-package com.jemmm.java.proxy.dynamicproxy;
+package com.jemmm.java.designpatterns.proxy.dynamicproxy;
 
 /**
  * Created by BIG-JIAN on 2017/7/9.

@@ -1,4 +1,4 @@
-package com.jemmm.java.proxy.cglib;
+package com.jemmm.java.designpatterns.proxy.cglib;
 
 /**
  * Created by BIG-JIAN on 2017/7/9.
