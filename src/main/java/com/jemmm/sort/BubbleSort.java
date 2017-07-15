@@ -8,7 +8,7 @@ import static com.jemmm.utils.CommonUtils.swap;
 import static com.jemmm.utils.PrintfUtils.printf;
 
 /**
- * Created by BIG-JIAN on 2017/7/8.
+ * Created by BIG-JIAN on 2017/7/8..
  */
 public class BubbleSort {
     public static void main(String[] args) {
