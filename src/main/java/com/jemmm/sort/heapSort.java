@@ -30,8 +30,8 @@ public class heapSort {
     public static void getMax(int [] a,int length){
         adjustHeap(a,length);
         for(int i = 0 ; i < length;i++){
-            swap(a,a[0],a[length-1]);
-            adjustHeap(a,length-1);
+            swap(a,0,length-1-i);
+            adjustHeap(a,length-1-i);
         }
     }
 
