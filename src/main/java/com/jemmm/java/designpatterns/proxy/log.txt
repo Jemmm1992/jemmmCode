@@ -1,0 +1,51 @@
+ http://www.importnew.com/22015.html
+ http://www.importnew.com/20732.html
+
+动态代理：
+在java的动态代理机制中，有两个重要的类或接口，一个是 InvocationHandler(Interface)、另一个则是 Proxy(Class)，这一个类和接口是实现我们动态代理所必须用到的。
+
+每一个动态代理类都必须要实现InvocationHandler这个接口，并且每个代理类的实例都关联到了一个handler，当我们通过代理对象调用一个方法的时候，
+这个方法的调用就会被转发为由InvocationHandler这个接口的 invoke 方法来进行调用。
+我们来看看InvocationHandler这个接口的唯一一个方法 invoke 方法：
+
+Object invoke(Object proxy, Method method, Object[] args) throws Throwable
+proxy:　　指代我们所代理的那个真实对象
+method:　　指代的是我们所要调用真实对象的某个方法的Method对象
+args:　　指代的是调用真实对象某个方法时接受的参数
+
+Proxy这个类的作用就是用来动态创建一个代理对象的类，它提供了许多的方法，但是我们用的最多的就是 newProxyInstance 这个方法：
+这个方法的作用就是得到一个动态的代理对象，其接收三个参数，我们来看看这三个参数所代表的含义：
+
+public static Object newProxyInstance(ClassLoader loader, Class<?>[] interfaces, InvocationHandler h) throws IllegalArgumentException
+
+loader:　　一个ClassLoader对象，定义了由哪个ClassLoader对象来对生成的代理对象进行加载
+interfaces:　　一个Interface对象的数组，表示的是我将要给我需要代理的对象提供一组什么接口，如果我提供了一组接口给它，
+那么这个代理对象就宣称实现了该接口(多态)，这样我就能调用这组接口中的方法了
+h:　　一个InvocationHandler对象，表示的是当我这个动态代理对象在调用方法的时候，会关联到哪一个InvocationHandler对象上
+
+通过 Proxy.newProxyInstance 创建的代理对象是在jvm运行时动态生成的一个对象，它并不是我们的InvocationHandler类型，
+也不是我们定义的那组接口的类型，而是在运行是动态生成的一个对象，并且命名方式都是这样的形式，以$开头，proxy为中，最后一个数字表示对象的标号。
+
+
+
+动态代理与静态代理的区别
+1. Proxy类的代码被固定下来，不会因为业务的逐渐庞大而庞大；
+2. 可以实现AOP编程，这是静态代理无法实现的；
+3. 解耦，如果用在web业务下，可以实现数据层和业务层的分离。
+4. 动态代理的优势就是实现无侵入式的代码扩展。 静态代理这个模式本身有个大问题，
+    如果类方法数量越来越多的时候，代理类的代码量是十分庞大的。所以引入动态代理来解决此类问题.
+
+
+cglib
+
+cglib是针对类来实现代理的，他的原理是对指定的目标类生成一个子类，并覆盖其中方法实现增强，
+但因为采用的是继承，所以不能对final修饰的类进行代理。
+
+Cglib jdk和静态代理有什么区别。
+参考下面的连接：http://www.cnblogs.com/jqyp/archive/2010/08/20/1805041.html
+CGLib创建的动态代理对象性能比JDK创建的动态代理对象的性能高不少，但是CGLib在创建代理对象时所花费的时间却比JDK多得多，
+所以对于单例的对象，因为无需频繁创建对象，用CGLib合适，反之，使用JDK方式要更为合适一些。
+同时，由于CGLib由于是采用动态创建子类的方法，对于final方法，无法进行代理。
+CGLIB原理：动态生成一个要代理类的子类，子类重写要代理的类的所有不是final的方法。在子类中采用方法拦截的技术拦截所有父类方法的调用，顺势织入横切逻辑。
+它比使用java反射的JDK动态代理要快。
+CGLIB底层：使用字节码处理框架ASM，来转换字节码并生成新的类。不鼓励直接使用ASM，
