@@ -9,7 +9,7 @@ public class knapsack01 {
     public static void main(String[] args) {
         int[] w = { 3, 5, 1, 2, 2 };
         int[] c = { 4, 5, 2, 1, 3 };
-        int total = 8;
+        int total = 9;
         int[][] dp1 = get1(w, c, total);
         printf(dp1);
         int[] dp2 = get2(w, c, total);
