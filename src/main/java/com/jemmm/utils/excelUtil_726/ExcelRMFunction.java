@@ -1,4 +1,4 @@
-package com.jemmm.utils.excelutil3;
+package com.jemmm.utils.excelUtil_726;
 
 import org.apache.poi.hssf.usermodel.HSSFCellStyle;
 import org.apache.poi.hssf.usermodel.HSSFDataFormat;
@@ -18,24 +18,26 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
+
 /**
  * Created by BIG-JIAN on 2017/7/6.
+ * 一对一 从excel读取
  */
-public class ExcelRM2<T> {
+public class ExcelRMFunction<T> {
     Class<T> clazz;
 
-    public ExcelRM2(Class<T> clazz) {
+    public ExcelRMFunction(Class<T> clazz) {
         this.clazz = clazz;
     }
 
-    public List importFromExcel(String sheetName, InputStream input) {
+    public List<T> importFromExcel(String sheetName, InputStream input) {
         List<T> list = new ArrayList<>();
         try {
             XSSFWorkbook wb = new XSSFWorkbook(input);
             XSSFSheet sheet = null;
             if (!sheetName.trim().equals("")) {
                 sheet = wb.getSheet(sheetName);
-            }else{
+            } else {
                 sheet = wb.getSheetAt(0);// 如果sheetName为空，或者sheetName不存在，则默认的指向第一页
             }
             Map<String, Field> excelBaseInfoMap = getExcelBaseInfoField(clazz);
@@ -46,11 +48,10 @@ public class ExcelRM2<T> {
                 Map<Integer, String> headerMap = getExcelHeaderValue(headerRow);
 
                 // 解析表内容
-                T entity = null;
                 for (int i = 1; i < numOfRows; i++) {
                     Row bodyRow = sheet.getRow(i);
                     Map<Integer, String> bodyMap = getExcelBodyValue(bodyRow);
-                    entity = (entity == null ? clazz.newInstance() : entity);// 如果不存在实例则新建.
+                    T entity = clazz.newInstance();
                     setExcelBaseInfo(entity, bodyRow, excelBaseInfoMap, headerMap);
                     setExcelDetailMap(entity, headerMap, bodyMap);
                     if (entity != null) {
@@ -158,7 +159,7 @@ public class ExcelRM2<T> {
                         cellStringValue = String.valueOf(sdf.format(cell.getDateCellValue()));
                     }
                 } else {
-                    DecimalFormat df = new DecimalFormat("0.0000");
+                    DecimalFormat df = new DecimalFormat("0.00");
                     cellStringValue = String.valueOf(df.format(cell.getNumericCellValue()));
                 }
                 break;
@@ -232,3 +233,4 @@ public class ExcelRM2<T> {
         return headerStyle;
     }
 }
+
