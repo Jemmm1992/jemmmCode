@@ -1,4 +1,4 @@
-package com.jemmm.utils.excelutil3;
+package com.jemmm.utils.excelUtil_726;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -8,15 +8,14 @@ import java.sql.Timestamp;
 import java.util.LinkedHashMap;
 
 /**
- * Created by xu_zj on 2017/7/4.
+ * Created by xu_zj on 2017/7/26.
  */
 @Getter
 @Setter
 @ToString
-public class TravelerBaseInfoVo {
+public class TravelerInfoVo {
     //主键ID
     private Long TravelersBaseInfoID;
-
     // 关联的出行人表格ID
     private Long TravelerExcelID;
 

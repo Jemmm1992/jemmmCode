@@ -1,4 +1,4 @@
-package com.jemmm.utils;
+package com.jemmm.modal;
 
 import java.util.Date;
 
