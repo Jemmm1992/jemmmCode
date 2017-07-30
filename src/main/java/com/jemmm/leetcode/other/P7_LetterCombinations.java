@@ -32,6 +32,31 @@ public class P7_LetterCombinations {
         return res;
     }
 
+    public static ArrayList<String> letterCombinations2(String digits) {
+        ArrayList<String> res = new ArrayList<>();
+        if (digits == null || digits.length() == 0) return res;
+        res = new ArrayList<>();
+        DFS(0, digits, res, new StringBuffer());
+        return res;
+    }
+
+    /**
+     * dfs的解法
+     */
+    public static void DFS(int start, String digits, ArrayList<String> res, StringBuffer sb) {
+        if (start == digits.length()) {
+            res.add(sb.toString());
+            return;
+        }
+        String letters = getLetters(digits.charAt(start));
+        for (int i = 0; i < letters.length(); i++) {
+            sb.append(letters.charAt(i));
+            DFS(start + 1, digits, res, sb);
+            sb.deleteCharAt(sb.length() - 1);
+        }
+    }
+
+
     private static String getLetters(char digit) {
         switch (digit) {
             case '2':
