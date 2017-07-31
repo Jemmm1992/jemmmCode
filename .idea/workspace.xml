@@ -5,92 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="56ed82f1-26af-4457-879e-32b90a61593a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/prototype/tree/OrderRecur.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/prototype/tree/OrderUnRecur.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/prototype/tree/PrintfTree.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/prototype/tree/SerialAndRecon.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jemmm/interviewguide/getMaxWindow.java" afterPath="$PROJECT_DIR$/src/main/java/com/jemmm/interviewguide/getMaxWindow.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jemmm/java/collections/HashMapTest/hashMapTest.java" afterPath="$PROJECT_DIR$/src/main/java/com/jemmm/java/collections/HashMapTest/hashMapTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jemmm/java/collections/PriorityQueueTest.java" afterPath="$PROJECT_DIR$/src/main/java/com/jemmm/java/collections/PriorityQueueTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Backtracking/P1_Combine.java" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Backtracking/P1_Combine.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Backtracking/P2_CombinationSum.java" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Backtracking/P2_CombinationSum.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Backtracking/P3_CombinationSum2.java" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Backtracking/P3_CombinationSum2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Backtracking/P7_permute.java" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Backtracking/P7_permute.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/dp/A_LongestSubSeq.java" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/dp/A_LongestSubSeq.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/dp/L1_RussianDollEnvelopes.java" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/dp/L1_RussianDollEnvelopes.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/dp/P12_GenerateTrees__.java" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/dp/P12_GenerateTrees__.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/dp/P3_MaxProfit.java" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/dp/P3_MaxProfit.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/linkedlist/AddTwoNumbers.java" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/linkedlist/AddTwoNumbers.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/linkedlist/ConvertSortedListToBinarySearchTree.java" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/linkedlist/ConvertSortedListToBinarySearchTree.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/linkedlist/LinkedListCycle.java" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/linkedlist/LinkedListCycle.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/linkedlist/LinkedListCycleii.java" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/linkedlist/LinkedListCycleii.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/linkedlist/MergeKSortedLists.java" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/linkedlist/MergeKSortedLists.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/linkedlist/MergeTwoSortedLists.java" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/linkedlist/MergeTwoSortedLists.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/linkedlist/PartitionList.java" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/linkedlist/PartitionList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/linkedlist/RemoveDuplicatesFromSortedList.java" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/linkedlist/RemoveDuplicatesFromSortedList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/linkedlist/RemoveDuplicatesFromSortedListII.java" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/linkedlist/RemoveDuplicatesFromSortedListII.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/linkedlist/RemoveNthNodeFromEndOfList.java" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/linkedlist/RemoveNthNodeFromEndOfList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/linkedlist/ReorderList.java" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/linkedlist/ReorderList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/linkedlist/ReverseNodesInkGroup.java" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/linkedlist/ReverseNodesInkGroup.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/linkedlist/RotateList.java" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/linkedlist/RotateList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/linkedlist/SortList.java" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/linkedlist/SortList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/linkedlist/SwapNodesInPairs.java" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/linkedlist/SwapNodesInPairs.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/linkedlist/_ReverseLinkedListii.java" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/linkedlist/_ReverseLinkedListii.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/other/P15_MinDepth.java" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/other/P15_MinDepth.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/other/P16_BuildTree.java" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/other/P16_BuildTree.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/other/P17_buildTree2.java" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/other/P17_buildTree2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/other/P18_levelOrder.java" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/other/P18_levelOrder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/other/P19_levelOrderBottom.java" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/other/P19_levelOrderBottom.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/other/P1_TwoSum.java" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/other/P1_TwoSum.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/other/P20_ZigzagLevelOrder.java" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/other/P20_ZigzagLevelOrder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/other/P21_GenerateParentheses.java" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/other/P21_GenerateParentheses.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/other/P2_AddTwoNumbers.java" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/other/P2_AddTwoNumbers.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/other/P3_3Sum.java" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/other/P3_3Sum.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/other/P4_4Sum.java" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/other/P4_4Sum.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/other/P7_LetterCombinations.java" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/other/P7_LetterCombinations.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/other/p11_MissingNumber.java" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/other/p11_MissingNumber.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/other/p14_MaxDepth.java" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/other/p14_MaxDepth.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/partition/Permutations.java" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/partition/Permutations.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/partition/Permutations_ii.java" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/partition/Permutations_ii.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/jemmm/modal/Student.java" afterPath="$PROJECT_DIR$/src/main/java/com/modal/Student.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/jemmm/modal/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/modal/User.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/jemmm/prototype/Joseph.java" afterPath="$PROJECT_DIR$/src/main/java/com/prototype/common/Joseph.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/jemmm/prototype/PrimeScreening.java" afterPath="$PROJECT_DIR$/src/main/java/com/prototype/common/PrimeScreening.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/jemmm/prototype/Random1To100.java" afterPath="$PROJECT_DIR$/src/main/java/com/prototype/common/Random1To100.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/jemmm/prototype/knapsack01.java" afterPath="$PROJECT_DIR$/src/main/java/com/prototype/common/knapsack01.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/jemmm/prototype/knapsackFull.java" afterPath="$PROJECT_DIR$/src/main/java/com/prototype/common/knapsackFull.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/jemmm/sort/BubbleSort.java" afterPath="$PROJECT_DIR$/src/main/java/com/prototype/sort/BubbleSort.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/jemmm/sort/InsertSort.java" afterPath="$PROJECT_DIR$/src/main/java/com/prototype/sort/InsertSort.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/jemmm/sort/MergeSort.java" afterPath="$PROJECT_DIR$/src/main/java/com/prototype/sort/MergeSort.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/jemmm/sort/MultiKeyRadixSort.java" afterPath="$PROJECT_DIR$/src/main/java/com/prototype/sort/MultiKeyRadixSort.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/jemmm/sort/QuickSort.java" afterPath="$PROJECT_DIR$/src/main/java/com/prototype/sort/QuickSort.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/jemmm/sort/SelectSort.java" afterPath="$PROJECT_DIR$/src/main/java/com/prototype/sort/SelectSort.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/jemmm/sort/SortTest.java" afterPath="$PROJECT_DIR$/src/main/java/com/prototype/sort/SortTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/jemmm/sort/heapSort.java" afterPath="$PROJECT_DIR$/src/main/java/com/prototype/sort/heapSort.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/jemmm/utils/CommonUtils.java" afterPath="$PROJECT_DIR$/src/main/java/com/utils/CommonUtils.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/jemmm/utils/DateUtils.java" afterPath="$PROJECT_DIR$/src/main/java/com/utils/DateUtils.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/jemmm/utils/FileUtils.java" afterPath="$PROJECT_DIR$/src/main/java/com/utils/FileUtils.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/jemmm/utils/JedisAdapter.java" afterPath="$PROJECT_DIR$/src/main/java/com/utils/JedisAdapter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/jemmm/utils/PrintfUtils.java" afterPath="$PROJECT_DIR$/src/main/java/com/utils/PrintfUtils.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/jemmm/utils/ReflectUtils.java" afterPath="$PROJECT_DIR$/src/main/java/com/utils/ReflectUtils.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/jemmm/utils/SensitiveUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/utils/SensitiveUtil.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/jemmm/utils/excelUtil_726/ERMTest.java" afterPath="$PROJECT_DIR$/src/main/java/com/utils/excelUtil_726/ERMTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/jemmm/utils/excelUtil_726/ExcelAnnotation.java" afterPath="$PROJECT_DIR$/src/main/java/com/utils/excelUtil_726/ExcelAnnotation.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/jemmm/utils/excelUtil_726/ExcelRMFunction.java" afterPath="$PROJECT_DIR$/src/main/java/com/utils/excelUtil_726/ExcelRMFunction.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/jemmm/utils/excelUtil_726/ExcelValueType.java" afterPath="$PROJECT_DIR$/src/main/java/com/utils/excelUtil_726/ExcelValueType.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/jemmm/utils/excelUtil_726/TravelerInfoVo.java" afterPath="$PROJECT_DIR$/src/main/java/com/utils/excelUtil_726/TravelerInfoVo.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/jemmm/utils/excelutil2/ExcelRM.java" afterPath="$PROJECT_DIR$/src/main/java/com/utils/excelutil2/ExcelRM.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/jemmm/utils/excelutil2/ExcelVo.java" afterPath="$PROJECT_DIR$/src/main/java/com/utils/excelutil2/ExcelVo.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/jemmm/utils/excelutil2/StudentVo.java" afterPath="$PROJECT_DIR$/src/main/java/com/utils/excelutil2/StudentVo.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/jemmm/utils/excelutil2/test2.java" afterPath="$PROJECT_DIR$/src/main/java/com/utils/excelutil2/test2.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/jemmm/utils/execelUtil/ExcelUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/utils/execelUtil/ExcelUtil.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/jemmm/utils/execelUtil/ExcelUtilTest.java" afterPath="$PROJECT_DIR$/src/main/java/com/utils/execelUtil/ExcelUtilTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/jemmm/utils/execelUtil/ExcelVOAttribute.java" afterPath="$PROJECT_DIR$/src/main/java/com/utils/execelUtil/ExcelVOAttribute.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/jemmm/utils/execelUtil/StudentVO.java" afterPath="$PROJECT_DIR$/src/main/java/com/utils/execelUtil/StudentVO.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/common/ListNode.java" afterPath="$PROJECT_DIR$/src/main/java/com/modal/ListNode.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/common/RandomListNode.java" afterPath="$PROJECT_DIR$/src/main/java/com/modal/RandomListNode.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/common/TreeNode.java" afterPath="$PROJECT_DIR$/src/main/java/com/modal/TreeNode.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jemmm/leetcode/other/P21_AddBinary_.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jemmm/leetcode/other/P22_AddStrings.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
     </list>
     <list id="cb1d3ead-b9d0-4db5-9fbb-63b7e549be7b" name="Failed commit: Default" comment="泛型的基本概念和使用" />
     <ignored path="jemmmCode.iws" />
@@ -122,7 +39,7 @@
       <file leaf-file-name="OrderRecur.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/prototype/tree/OrderRecur.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
+            <state relative-caret-position="437">
               <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
               <folding />
             </state>
@@ -132,15 +49,10 @@
       <file leaf-file-name="OrderUnRecur.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/prototype/tree/OrderUnRecur.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-19">
+            <state relative-caret-position="19">
               <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#324#334#0" expanded="true" />
-                <element signature="e#927#937#0" expanded="true" />
-                <element signature="e#1513#1523#0" expanded="true" />
-                <element signature="e#1569#1579#0" expanded="true" />
-                <element signature="e#2240#2250#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -149,11 +61,10 @@
       <file leaf-file-name="SerialAndRecon.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/prototype/tree/SerialAndRecon.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
+            <state relative-caret-position="513">
               <caret line="27" column="44" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#941#949#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -162,7 +73,7 @@
       <file leaf-file-name="PrintfTree.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/prototype/tree/PrintfTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-630">
+            <state relative-caret-position="152">
               <caret line="8" column="25" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="27" />
               <folding />
             </state>
@@ -192,7 +103,7 @@
       <file leaf-file-name="_ReverseLinkedListii.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/leetcode/linkedlist/_ReverseLinkedListii.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
+            <state relative-caret-position="437">
               <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
               <folding />
             </state>
@@ -212,7 +123,7 @@
       <file leaf-file-name="RandomListNode.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/modal/RandomListNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="114">
               <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
               <folding />
             </state>
@@ -349,9 +260,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -524,6 +434,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1135,6 +1046,7 @@
       <workItem from="1501382840902" duration="25537000" />
       <workItem from="1501419595591" duration="4154000" />
       <workItem from="1501513529291" duration="4483000" />
+      <workItem from="1501518165285" duration="9000" />
     </task>
     <task id="LOCAL-00001" summary="增加utils类">
       <created>1497791318284</created>
@@ -1294,7 +1206,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="277649000" />
+    <option name="totallyTimeSpent" value="277658000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1924" height="1047" extended-state="0" />
@@ -1302,13 +1214,12 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286026" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33076075" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32745314" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296582" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969433" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1326,6 +1237,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286026" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295699" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
@@ -1584,7 +1496,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="657" column="0" selection-start-line="657" selection-start-column="0" selection-end-line="657" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1656,7 +1567,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="21" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1664,7 +1574,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="33">
           <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1680,7 +1589,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1688,7 +1596,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1767,7 +1674,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1775,9 +1681,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1785,18 +1688,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="532">
           <caret line="28" column="3" selection-start-line="28" selection-start-column="3" selection-end-line="69" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jemmm/test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jemmm/test.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/prototype/common/Joseph.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1853,17 +1748,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/modal/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/modal/Node.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/leetcode/linkedlist/_ReverseLinkedListii.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
+        <state relative-caret-position="437">
           <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
           <folding />
         </state>
@@ -1879,7 +1767,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/modal/RandomListNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="114">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding />
         </state>
@@ -1898,7 +1786,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/prototype/tree/OrderRecur.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
+        <state relative-caret-position="437">
           <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
           <folding />
         </state>
@@ -1906,18 +1794,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/prototype/tree/SerialAndRecon.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
+        <state relative-caret-position="513">
           <caret line="27" column="44" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#941#949#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/prototype/tree/PrintfTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-630">
+        <state relative-caret-position="152">
           <caret line="8" column="25" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="27" />
           <folding />
         </state>
@@ -1925,15 +1812,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/prototype/tree/OrderUnRecur.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-19">
+        <state relative-caret-position="19">
           <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#324#334#0" expanded="true" />
-            <element signature="e#927#937#0" expanded="true" />
-            <element signature="e#1513#1523#0" expanded="true" />
-            <element signature="e#1569#1579#0" expanded="true" />
-            <element signature="e#2240#2250#0" expanded="true" />
           </folding>
         </state>
       </provider>
