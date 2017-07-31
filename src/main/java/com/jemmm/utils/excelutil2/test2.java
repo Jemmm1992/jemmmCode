@@ -16,19 +16,21 @@ public class test2 {
 
     public static void main(String[] args) throws InstantiationException, IllegalAccessException {
         // 数据集
-        List<StudentVo2> list = new ArrayList<>();
+        List<StudentVo> list = new ArrayList<>();
         for (int i = 0; i < 10; i++) {
-            StudentVo2 vo = new StudentVo2();
+            StudentVo vo = new StudentVo();
             vo.setId(i);
             vo.setName("李白" + i);
             vo.setAge(20 + i);
             list.add(vo);
         }
-        ExcelRM<StudentVo2> erm = new ExcelRM<>(StudentVo2.class);
+
+        ExcelRM<StudentVo> erm = new ExcelRM<>(StudentVo.class);
         Map<Integer, String> excelHeader = erm.getExcelHeader();
         System.out.println(excelHeader);
+
         Map<Integer, List<Object>> excelBody = erm.getExcelBody(list);
-        System.out.println(excelBody);
+//        System.out.println(excelBody);
 
         FileOutputStream out = null;
         try {

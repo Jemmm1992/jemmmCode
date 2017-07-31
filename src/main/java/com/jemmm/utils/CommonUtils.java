@@ -1,6 +1,6 @@
 package com.jemmm.utils;
 
-import com.jemmm.leetcode.common.ListNode;
+import com.leetcode.common.ListNode;
 
 /**
  * Created by xu_zj on 2017/6/30.
