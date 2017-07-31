@@ -4,10 +4,10 @@ package com.leetcode.linkedlist;
  * Created by BIG-JIAN on 2017/7/3.
  */
 
-import com.leetcode.common.ListNode;
+import com.modal.ListNode;
 
-import static com.jemmm.utils.CommonUtils.arrayToListNode;
-import static com.jemmm.utils.PrintfUtils.printfListNode;
+import static com.utils.CommonUtils.arrayToListNode;
+import static com.utils.PrintfUtils.printfListNode;
 
 /**
  * Given a linked list, swap every two adjacent nodes and return its head.

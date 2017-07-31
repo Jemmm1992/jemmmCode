@@ -1,6 +1,6 @@
 package com.leetcode.other;
 
-import com.leetcode.common.TreeNode;
+import com.modal.TreeNode;
 
 /**
  * Created by BIG-JIAN on 2017/7/27.

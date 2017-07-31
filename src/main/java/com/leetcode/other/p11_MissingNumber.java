@@ -1,6 +1,6 @@
 package com.leetcode.other;
 
-import static com.jemmm.utils.PrintfUtils.printf;
+import static com.utils.PrintfUtils.printf;
 
 /**
  * Created by BIG-JIAN on 2017/7/27.

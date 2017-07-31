@@ -1,7 +1,7 @@
 package com.leetcode.linkedlist;
 
-import com.leetcode.common.ListNode;
-import com.leetcode.common.TreeNode;
+import com.modal.ListNode;
+import com.modal.TreeNode;
 
 
 /**

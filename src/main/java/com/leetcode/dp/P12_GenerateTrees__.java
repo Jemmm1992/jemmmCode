@@ -1,6 +1,6 @@
 package com.leetcode.dp;
 
-import com.leetcode.common.TreeNode;
+import com.modal.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;
