@@ -16,6 +16,7 @@ target/
 *.ipr
 
 target
+workspace.xml
 
 ### NetBeans ###
 nbproject/private/
