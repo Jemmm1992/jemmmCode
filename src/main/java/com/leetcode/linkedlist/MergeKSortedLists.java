@@ -4,14 +4,14 @@ package com.leetcode.linkedlist;
  * Created by BIG-JIAN on 2017/7/3.
  */
 
-import com.leetcode.common.ListNode;
+import com.modal.ListNode;
 
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
-import static com.jemmm.utils.CommonUtils.arrayToListNode;
-import static com.jemmm.utils.PrintfUtils.printfListNode;
+import static com.utils.CommonUtils.arrayToListNode;
+import static com.utils.PrintfUtils.printfListNode;
 
 /**
  * Merge k sorted linked lists and return it as one sorted list. Analyze and describe its complexity.

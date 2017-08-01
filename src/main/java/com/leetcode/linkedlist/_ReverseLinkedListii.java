@@ -4,7 +4,7 @@ package com.leetcode.linkedlist;
  * Created by xu_zj on 2017/6/28.
  */
 
-import com.leetcode.common.ListNode;
+import com.modal.ListNode;
 
 /**
  Reverse a linked list from position m to n. Do it in-place and in one-pass.

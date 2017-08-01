@@ -1,6 +1,6 @@
 package com.leetcode.other;
 
-import com.leetcode.common.ListNode;
+import com.modal.ListNode;
 
 /**
  * Created by BIG-JIAN on 2017/7/24.

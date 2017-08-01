@@ -1,6 +1,6 @@
 package com.leetcode.linkedlist;
 
-import com.leetcode.common.ListNode;
+import com.modal.ListNode;
 
 /**
  * Created by BIG-JIAN on 2017/6/28.

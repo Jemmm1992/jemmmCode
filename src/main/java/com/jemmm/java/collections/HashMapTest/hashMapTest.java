@@ -1,6 +1,6 @@
 package com.jemmm.java.collections.HashMapTest;
 
-import com.jemmm.modal.User;
+import com.modal.User;
 
 import java.util.HashMap;
 

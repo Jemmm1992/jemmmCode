@@ -2,7 +2,7 @@ package com.leetcode.other;
 
 import java.util.ArrayList;
 
-import static com.jemmm.utils.PrintfUtils.printf;
+import static com.utils.PrintfUtils.printf;
 
 /**
  * Created by xu_zj on 2017/7/26.
