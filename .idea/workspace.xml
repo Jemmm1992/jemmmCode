@@ -5,14 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="56ed82f1-26af-4457-879e-32b90a61593a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/zhenti/pinduoduo/Main1.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/zhenti/pinduoduo/Main2.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/zhenti/pinduoduo/Main3.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/zhenti/pinduoduo/Main4.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/zhenti/pinduoduo/test.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/zhenti/pinduoduo/走迷宫.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/zhenti/pinduoduo/走迷宫2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Array/largestRectangleArea.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/re1.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/prototype/maze/Maze1.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/prototype/maze/Maze2.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/other/P1_TwoSum.java" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/other/P1_TwoSum.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/other/P3_3Sum.java" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/other/P3_3Sum.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/stack/LargestRectangleInHistogram.java" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/stack/LargestRectangleInHistogram.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/prototype/tree/OrderUnRecur.java" afterPath="$PROJECT_DIR$/src/main/java/com/prototype/tree/OrderUnRecur.java" />
     </list>
     <list id="cb1d3ead-b9d0-4db5-9fbb-63b7e549be7b" name="Failed commit: Default" comment="泛型的基本概念和使用" />
     <ignored path="jemmmCode.iws" />
@@ -88,7 +88,7 @@
       <file leaf-file-name="走迷宫.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/zhenti/pinduoduo/走迷宫.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="912">
+            <state relative-caret-position="950">
               <caret line="50" column="27" selection-start-line="50" selection-start-column="27" selection-end-line="50" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -100,7 +100,7 @@
       <file leaf-file-name="Main2.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/zhenti/pinduoduo/Main2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
+            <state relative-caret-position="475">
               <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -122,7 +122,7 @@
       <file leaf-file-name="Main4.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/zhenti/pinduoduo/Main4.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
+            <state relative-caret-position="475">
               <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -268,8 +268,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1028,6 +1028,7 @@
       <workItem from="1501518165285" duration="46000" />
       <workItem from="1501585965929" duration="14353000" />
       <workItem from="1501676143637" duration="150000" />
+      <workItem from="1501676336649" duration="10000" />
     </task>
     <task id="LOCAL-00001" summary="增加utils类">
       <created>1497791318284</created>
@@ -1194,7 +1195,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="292198000" />
+    <option name="totallyTimeSpent" value="292208000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1924" height="1047" extended-state="0" />
@@ -1751,7 +1752,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zhenti/pinduoduo/走迷宫.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="912">
+        <state relative-caret-position="950">
           <caret line="50" column="27" selection-start-line="50" selection-start-column="27" selection-end-line="50" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1761,7 +1762,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zhenti/pinduoduo/Main4.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
+        <state relative-caret-position="475">
           <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1779,7 +1780,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zhenti/pinduoduo/Main2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
+        <state relative-caret-position="475">
           <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />

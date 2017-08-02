@@ -11,7 +11,7 @@ public class OrderUnRecur {
     public static void preOrderUnRecur(TreeNode head) {
         System.out.print("pre-order: ");
         if (head != null) {
-            Stack<TreeNode> stack = new Stack<TreeNode>();
+            Stack<TreeNode> stack = new Stack<>();
             stack.add(head);
             while (!stack.isEmpty()) {
                 head = stack.pop();
@@ -30,7 +30,7 @@ public class OrderUnRecur {
     public static void inOrderUnRecur(TreeNode head) {
         System.out.print("in-order: ");
         if (head != null) {
-            Stack<TreeNode> stack = new Stack<TreeNode>();
+            Stack<TreeNode> stack = new Stack<>();
             while (!stack.isEmpty() || head != null) {
                 if (head != null) {
                     stack.push(head);
@@ -48,8 +48,8 @@ public class OrderUnRecur {
     public static void posOrderUnRecur1(TreeNode head) {
         System.out.print("pos-order: ");
         if (head != null) {
-            Stack<TreeNode> s1 = new Stack<TreeNode>();
-            Stack<TreeNode> s2 = new Stack<TreeNode>();
+            Stack<TreeNode> s1 = new Stack<>();
+            Stack<TreeNode> s2 = new Stack<>();
             s1.push(head);
             while (!s1.isEmpty()) {
                 head = s1.pop();
@@ -71,7 +71,7 @@ public class OrderUnRecur {
     public static void posOrderUnRecur2(TreeNode h) {
         System.out.print("pos-order: ");
         if (h != null) {
-            Stack<TreeNode> stack = new Stack<TreeNode>();
+            Stack<TreeNode> stack = new Stack<>();
             stack.push(h);
             TreeNode c = null;
             while (!stack.isEmpty()) {
