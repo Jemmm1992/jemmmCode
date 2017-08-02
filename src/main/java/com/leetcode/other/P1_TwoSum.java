@@ -1,5 +1,6 @@
 package com.leetcode.other;
 
+import java.util.Arrays;
 import java.util.HashMap;
 
 import static com.utils.PrintfUtils.printf;
@@ -10,8 +11,11 @@ import static com.utils.PrintfUtils.printf;
 public class P1_TwoSum {
     public static void main(String[] args) {
         int[] a = {2, 7, 11, 15};
-        int[] ints = twoSum(a, 9);
+        int[] a2 = {3, 2, 4};
+        int[] ints = twoSum(a2, 6);
+        int[] ints2 = twoSum2(a2, 6);
         printf(ints);
+        printf(ints2);
     }
 
     //map里面放 键为target-每个数的结果 值为下标
@@ -31,5 +35,23 @@ public class P1_TwoSum {
             }
         }
         return result;
+    }
+
+    public static int[] twoSum2(int[] numbers, int target) {
+        Arrays.sort(numbers);
+        int l = 0, r = numbers.length - 1;
+        int[] a = new int[2];
+        while (l < r) {
+            if (numbers[l] + numbers[r] == target) {
+                a[0] = l ;
+                a[1] = r + 1;
+                break;
+            } else if (numbers[l] + numbers[r] > target) {
+                r--;
+            } else {
+                l++;
+            }
+        }
+        return a;
     }
 }
