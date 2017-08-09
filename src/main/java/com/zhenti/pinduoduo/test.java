@@ -5,8 +5,13 @@ package com.zhenti.pinduoduo;
  */
 public class test {
     public static void main(String[] args) {
-        System.out.println((int)'A');
-        System.out.println((int)'Z');
-        System.out.println((int)'a');
+//        for (int i = 'a'; i <= 'z'; i++) {
+//            int key = 1 << (i - 'a');
+//            System.out.println(key);
+//        }
+        System.out.println(3 & 2 );
+
+//        System.out.println(Integer.MAX_VALUE);
+
     }
 }
