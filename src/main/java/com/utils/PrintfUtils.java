@@ -23,7 +23,7 @@ public class PrintfUtils {
 
 
     public static void printf(int id, Object s) {
-        System.out.printf("%d,%s", id, s.toString());
+        System.out.printf("[%d], %s", id, s.toString());
         System.out.println();
     }
 
