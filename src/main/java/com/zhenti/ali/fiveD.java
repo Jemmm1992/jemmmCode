@@ -1,3 +1,5 @@
+package com.zhenti.ali;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -19,7 +21,7 @@ import java.util.Scanner;
  * 2222
  */
 
-public class ttt {
+public class fiveD {
 /** 请完成下面这个函数，实现题目要求的功能 **/
     /**
      * 当然，你也可以不按照这个模板来作答，完全按照自己的想法来 ^-^
