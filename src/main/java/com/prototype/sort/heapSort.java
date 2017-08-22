@@ -1,6 +1,7 @@
 package com.prototype.sort;
 
 import java.util.Arrays;
+import java.util.PriorityQueue;
 
 import static com.utils.CommonUtils.swap;
 import static com.utils.PrintfUtils.printf;
@@ -14,7 +15,7 @@ public class heapSort {
         printf(a);
         adjustHeap(a, a.length);
         printf(a);
-        getMax(a,a.length);
+        getMax(a, a.length);
         printf(a);
         Arrays.sort(a);
         printf(a);
@@ -26,12 +27,11 @@ public class heapSort {
 
     // 堆排序的思路
     // 建立堆，不断调整
-
-    public static void getMax(int [] a,int length){
-        adjustHeap(a,length);
-        for(int i = 0 ; i < length;i++){
-            swap(a,0,length-1-i);
-            adjustHeap(a,length-1-i);
+    public static void getMax(int[] a, int length) {
+        adjustHeap(a, length);
+        for (int i = 0; i < length; i++) {
+            swap(a, 0, length - 1 - i);
+            adjustHeap(a, length - 1 - i);
         }
     }
 
@@ -43,13 +43,35 @@ public class heapSort {
                 int child = 2 * j + 1;
                 if (2 * j + 2 < length && a[child + 1] > a[child]) {
                     child += 1;
-                    }
+                }
                 if (a[child] > a[j]) {
                     swap(a, child, j);
                 }
                 j = child;
             }
         }
+    }
+
+    /**
+     * 使用API堆排序
+     */
+    public static void heapSort2(int[] a) {
+        // PriorityQueue的排序不是普通的排序，而是堆排序
+        PriorityQueue<Integer> heap = new PriorityQueue<>();
+        for (int i = 0; i < a.length; i++) {
+            heap.add(a[i]);
+        }
+        // 打印的堆的顺序
+        for (Integer item : heap) {
+            System.out.print(item + " ");
+        }
+        System.out.println();
+        // 从小到大来排序
+        int len = heap.size();//这里之所以取出.size()大小，因为每一次poll()之后size大小都会变化，所以不能作为for循环的判断条件
+        for (int i = 0; i < len; i++) {
+            System.out.print(heap.poll() + " ");
+        }
+        System.out.println();
     }
 
     /**
