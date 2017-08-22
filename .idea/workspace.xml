@@ -4,47 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/src/main/java/com/leetcode/other/P18_levelOrder.java" line="39" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56ed82f1-26af-4457-879e-32b90a61593a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/prototype/common/GCD.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/prototype/common/Radom.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/prototype/sort/Sort.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/zhenti/lianjia/t1.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/zhenti/lianjia/t2.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/zhenti/lianjia/t3.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/zhenti/wangyi/qiuzhao2017/p1_huiwenxulie.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/zhenti/wangyi/qiuzhao2017/p2_youyadedian.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/zhenti/wangyi/qiuzhao2017/p3_tiaoshiban.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/zhenti/wangyi/qiuzhao2017/p4_anhei.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/zhenti/wangyi/qiuzhao2017/p4_rev.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/zhenti/wangyi/qiuzhao2017/p6_maxjishu.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/zhenti/wangyi/qiuzhao2018/p1_zhuankuai.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/zhenti/wangyi/qiuzhao2018/p2_dengchashulie.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/zhenti/wangyi/qiuzhao2018/p3_01chuan.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/zhenti/wangyi/qiuzhao2018/p4_caozuoxulie.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/zhenti/wangyi/qiuzhao2018/p5_dulidexiaoyi.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/zhenti/wangyi/qiuzhao2018/p6_qizi.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/zhenti/wangyi/qiuzhao2018/p6_qizi2.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/zhenti/wangyi/qiuzhao2018/p7_fengkuangqueue.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/zhenti/wangyi/qiuzhao2018/p8_shulie.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/zhenti/wangyi/qiuzhao2018/p8_shulie2.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/zhenti/wangyi/qiuzhao2018/p8_shulie3.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/zhenti/wangyi/qiuzhao2018/p8_shulie4.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/Sort.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/prototype/sort/SortTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/Main2.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/MyApplication.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/test.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/test2.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/ttt.java" afterPath="$PROJECT_DIR$/src/main/java/com/zhenti/ali/fiveD.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/prototype/sort/BubbleSort.java" afterPath="$PROJECT_DIR$/src/main/java/com/prototype/sort/BubbleSort.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/prototype/sort/InsertSort.java" afterPath="$PROJECT_DIR$/src/main/java/com/prototype/sort/InsertSort.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/prototype/sort/MergeSort.java" afterPath="$PROJECT_DIR$/src/main/java/com/prototype/sort/MergeSort.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/prototype/sort/QuickSort.java" afterPath="$PROJECT_DIR$/src/main/java/com/prototype/sort/QuickSort.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/prototype/sort/heapSort.java" afterPath="$PROJECT_DIR$/src/main/java/com/prototype/sort/heapSort.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/utils/PrintfUtils.java" afterPath="$PROJECT_DIR$/src/main/java/com/utils/PrintfUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/utils/excelUtil_726/ExcelRMFunction.java" afterPath="$PROJECT_DIR$/src/main/java/com/utils/excelUtil_726/ExcelRMFunction.java" />
-    </list>
+    <list default="true" id="56ed82f1-26af-4457-879e-32b90a61593a" name="Default" comment="" />
     <list id="cb1d3ead-b9d0-4db5-9fbb-63b7e549be7b" name="Failed commit: Default" comment="泛型的基本概念和使用" />
     <ignored path="jemmmCode.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -977,7 +937,7 @@
       <workItem from="1503375659325" duration="5278000" />
       <workItem from="1503385167673" duration="2475000" />
       <workItem from="1503388532639" duration="46000" />
-      <workItem from="1503388701879" duration="207000" />
+      <workItem from="1503388701879" duration="318000" />
     </task>
     <task id="LOCAL-00001" summary="增加utils类">
       <created>1497791318284</created>
@@ -1170,7 +1130,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="312220000" />
+    <option name="totallyTimeSpent" value="312331000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
