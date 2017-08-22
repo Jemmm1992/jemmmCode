@@ -1,34 +1,50 @@
 package com.utils.excelUtil_726;
 
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Font;
+import org.apache.poi.ss.usermodel.Row;
+
+import java.io.InputStream;
+import java.lang.reflect.Field;
+import java.util.Map;
+
+
+import org.apache.commons.lang3.StringUtils;
+import org.apache.poi.hssf.usermodel.HSSFCell;
 import org.apache.poi.hssf.usermodel.HSSFCellStyle;
-import org.apache.poi.hssf.usermodel.HSSFDataFormat;
-import org.apache.poi.hssf.usermodel.HSSFDateUtil;
 import org.apache.poi.hssf.usermodel.HSSFFont;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.streaming.SXSSFWorkbook;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-import java.io.InputStream;
-import java.lang.reflect.Field;
 import java.text.DecimalFormat;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
-import java.util.Map;
-
 
 /**
  * Created by BIG-JIAN on 2017/7/6.
- * 一对一 从excel读取
+ * 目前只支持一对一 从excel读取
  */
 public class ExcelRMFunction<T> {
     Class<T> clazz;
+    // 记录小标题的内容
+    private List<CategoryConfigVo> configList;
 
     public ExcelRMFunction(Class<T> clazz) {
         this.clazz = clazz;
     }
+
+    public List<CategoryConfigVo> getConfigList() {
+        return configList;
+    }
+
+    // 使用private来修饰，保证外界不能修改
+    private void setConfigList(List<CategoryConfigVo> configList) {
+        this.configList = configList;
+    }
+
 
     public List<T> importFromExcel(String sheetName, InputStream input) {
         List<T> list = new ArrayList<>();
@@ -46,21 +62,26 @@ public class ExcelRMFunction<T> {
                 // 解析头部
                 Row headerRow = sheet.getRow(0);
                 Map<Integer, String> headerMap = getExcelHeaderValue(headerRow);
-
                 // 解析表内容
                 for (int i = 1; i < numOfRows; i++) {
                     Row bodyRow = sheet.getRow(i);
-                    Map<Integer, String> bodyMap = getExcelBodyValue(bodyRow);
-                    T entity = clazz.newInstance();
-                    setExcelBaseInfo(entity, bodyRow, excelBaseInfoMap, headerMap);
-                    setExcelDetailMap(entity, headerMap, bodyMap);
-                    if (entity != null) {
-                        list.add(entity);
+                    // 如果第一列或者第二列都是空的那么就跳过
+                    Cell cell1 = bodyRow.getCell(0);
+                    Cell cell2 = bodyRow.getCell(1);
+                    String cellValue1 = getValueFromCell(cell1);
+                    String cellValue2 = getValueFromCell(cell2);
+                    if (!StringUtils.isBlank(cellValue1) || !StringUtils.isBlank(cellValue2)) {
+                        Map<Integer, String> bodyMap = getExcelBodyValue(bodyRow);
+                        T entity = clazz.newInstance();
+                        setExcelBaseInfo(entity, bodyRow, excelBaseInfoMap, headerMap);
+                        setExcelDetailMap(entity, headerMap, bodyMap);
+                        if (entity != null) {
+                            list.add(entity);
+                        }
                     }
                 }
             }
         } catch (Exception e) {
-            e.printStackTrace();
         }
         return list;
     }
@@ -74,7 +95,7 @@ public class ExcelRMFunction<T> {
             Cell cell = bodyRow.getCell(i);
             String cellValue = getValueFromCell(cell);
             Field field = excelBaseInfoMap.get(headerMap.get(i));
-            if (field != null)
+            if (field != null && !StringUtils.isBlank(cellValue))
                 setFieldValue(entity, field, cellValue);// 给entity中的field赋值
         }
     }
@@ -101,13 +122,31 @@ public class ExcelRMFunction<T> {
      * 获取excel表头的值
      */
     private Map<Integer, String> getExcelHeaderValue(Row headerRow) {
+        List<CategoryConfigVo> list = new ArrayList<>();
         Map<Integer, String> map = new LinkedHashMap<>();
+        int k = 0;
         int numOfCols = headerRow.getPhysicalNumberOfCells(); // 获取列头的数
         for (int i = 0; i < numOfCols; i++) {
             Cell cell = headerRow.getCell(i);
             String cellValue = getValueFromCell(cell);
-            map.put(i, cellValue);
+            // 检测到时小标题
+            if (cellValue.length() != 0 && cellValue.indexOf("#") == cellValue.length() - 1) {
+                CategoryConfigVo vo = new CategoryConfigVo();
+                vo.setCategoryName(cellValue.replace("#", ""));
+                vo.setBeginIndex(i + 1);
+                if (k > 0) {
+                    list.get(k - 1).setEndIndex(i - 1);
+                }
+                k++;
+                list.add(vo);
+            } else {
+                if (!StringUtils.isBlank(cellValue))//Map中只存非空的值
+                    map.put(i, cellValue);
+            }
         }
+        if (k > 0)
+            list.get(list.size() - 1).setEndIndex(numOfCols - 1);
+        setConfigList(list);
         return map;
     }
 
@@ -120,7 +159,8 @@ public class ExcelRMFunction<T> {
         for (int i = 0; i < numOfCols; i++) {
             Cell cell = bodyRow.getCell(i);
             String cellValue = getValueFromCell(cell);
-            map.put(i, cellValue);
+            if (!StringUtils.isBlank(cellValue))
+                map.put(i, cellValue);
         }
         return map;
     }
@@ -147,20 +187,27 @@ public class ExcelRMFunction<T> {
         if (cell == null) {
             return "";
         }
+        DataFormatter formatter = new DataFormatter();
         switch (cell.getCellType()) {
-            // 数字
-            case Cell.CELL_TYPE_NUMERIC:
-                if (HSSFDateUtil.isCellDateFormatted(cell)) {
-                    if (cell.getCellStyle().getDataFormat() == HSSFDataFormat.getBuiltinFormat("h:mm")) {
-                        SimpleDateFormat sdf = new SimpleDateFormat("HH:mm");
-                        cellStringValue = String.valueOf(sdf.format(cell.getDateCellValue()));
-                    } else {
-                        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-                        cellStringValue = String.valueOf(sdf.format(cell.getDateCellValue()));
-                    }
+            case HSSFCell.CELL_TYPE_STRING: // 字符串
+                cellStringValue = cell.getStringCellValue();
+                break;
+            case Cell.CELL_TYPE_NUMERIC: // 数字
+                if (DateUtil.isCellDateFormatted(cell)) {
+                    DataFormatter f = new DataFormatter();
+                    cellStringValue = f.formatCellValue(cell);
                 } else {
-                    DecimalFormat df = new DecimalFormat("0.00");
-                    cellStringValue = String.valueOf(df.format(cell.getNumericCellValue()));
+                    String s = cell.toString();
+                    if (s.contains("E")) {
+                        //证件号码或者手机号码
+                        DecimalFormat format = new DecimalFormat("#");
+                        Number value = cell.getNumericCellValue();
+                        cellStringValue = format.format(value);
+                    } else {
+                        double value = cell.getNumericCellValue();
+                        int intValue = (int) value;
+                        cellStringValue = value - intValue == 0 ? String.valueOf(intValue) : String.valueOf(value);
+                    }
                 }
                 break;
             case Cell.CELL_TYPE_FORMULA:
@@ -168,6 +215,12 @@ public class ExcelRMFunction<T> {
                 break;
             case Cell.CELL_TYPE_BOOLEAN:
                 cellStringValue = String.valueOf(cell.getBooleanCellValue()); //　布尔值
+                break;
+            case HSSFCell.CELL_TYPE_BLANK: // 空值
+                cellStringValue = "";
+                break;
+            case Cell.CELL_TYPE_ERROR: // 故障
+                cellStringValue = "";
                 break;
             default:
                 cellStringValue = cell.getStringCellValue();// 默认是Cell.CELL_TYPE_STRING 字符串

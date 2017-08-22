@@ -24,15 +24,17 @@ public class TravelerInfoVo {
     private String TravelerName;
 
     // 证件类型
-    @ExcelAnnotation(name = "证件类型")
-    private String cardType;
+//    @ExcelAnnotation(name = "证件类型")
+//    private String cardType;
 
     // 证件号码
     @ExcelAnnotation(name = "证件号码")
     private String cardCode;
 
     // 联系手机号
+    @ExcelAnnotation(name = "手机号码")
     private String telephone;
+
     // 数据创建时间
     private Timestamp createTime;
     // 数据修改时间
