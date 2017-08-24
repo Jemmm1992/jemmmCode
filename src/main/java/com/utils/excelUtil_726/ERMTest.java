@@ -15,7 +15,7 @@ import java.util.List;
  */
 public class ERMTest {
     public static void main(String[] args) {
-        String excelUrl = "adidas改好的表格0815.xlsx";
+        String excelUrl = "shlsq (5).xlsx";
         List<TravelerInfoVo> traverlerInfoVo = getTraverlerInfoVo(excelUrl);
         System.out.println(traverlerInfoVo.size());
     }
