@@ -8,10 +8,14 @@ import java.util.List;
 
 /**
  * Created by xu_zj on 2017/7/26.
+ * case1:标准
+ * case2:某一个单元格的内容为空
+ * case3:带小标题
+ * case4:支持日期 时间的读取
  */
 public class ERMTest {
     public static void main(String[] args) {
-        String excelUrl = "出行人表格.xlsx";
+        String excelUrl = "shlsq (5).xlsx";
         List<TravelerInfoVo> traverlerInfoVo = getTraverlerInfoVo(excelUrl);
         System.out.println(traverlerInfoVo.size());
     }
@@ -31,7 +35,8 @@ public class ERMTest {
         }
         // 解析excel表内容
         ExcelRMFunction<TravelerInfoVo> erm = new ExcelRMFunction<>(TravelerInfoVo.class);
-        List<TravelerInfoVo> list = erm.importFromExcel("", is);
-        return list;
+        List<TravelerInfoVo> travelerInfoVos = erm.importFromExcel("", is);
+        List<CategoryConfigVo> categoryConfigVos = erm.getConfigList();
+        return travelerInfoVos;
     }
 }

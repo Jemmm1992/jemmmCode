@@ -1,14 +1,7 @@
-package com.zhenti.ali;
+package com.zhenti.ALIBABA;
 
 /**
  * Created by BIG-JIAN on 2017/8/6.
- * 阿里算法岗测试题
- * 改造KMP算法，允许一个字母的
- * String str = "xx_drese_dress_dresw_search";
- * String match = "glass"; 不匹配
- * String match = "drese"; 匹配
- * String match = "arese"; 匹配
- * 允许一个单词字母出现偏差
  */
 public class Main {
 
