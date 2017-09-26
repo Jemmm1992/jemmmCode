@@ -41,12 +41,8 @@ public class heapSort {
             int j = i;
             while (2 * j + 1 < length) {
                 int child = 2 * j + 1;
-                if (2 * j + 2 < length && a[child + 1] > a[child]) {
-                    child += 1;
-                }
-                if (a[child] > a[j]) {
-                    swap(a, child, j);
-                }
+                if (2 * j + 2 < length && a[child + 1] > a[child]) child++;
+                if (a[child] > a[j]) swap(a, child, j);
                 j = child;
             }
         }

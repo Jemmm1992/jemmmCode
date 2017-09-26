@@ -1,4 +1,4 @@
-package com.jemmm.interviewguide;
+package com.interviewguide;
 
 import java.util.LinkedList;
 

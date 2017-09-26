@@ -8,11 +8,11 @@ import java.util.List;
  */
 public class P0_NQueens {
     public static void main(String[] args) {
-        int n = 8;
+        int n = 4;
         int i = helper2(0, new int[n], n);
         System.out.println(i);
 
-        List<List<String>> lists = solveNQueens(9);
+        List<List<String>> lists = solveNQueens(4);
         for (List<String> s : lists) {
             for (String vo : s) {
                 System.out.println(vo);
